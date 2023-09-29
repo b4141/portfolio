@@ -1,0 +1,39 @@
+.start-game {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.eyes-wrapper {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.eyes-container {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  width: 280px;
+  height: 60px;
+  gap: 100px;
+  scale: 0.5;
+}
+
+.start-game-text {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 2em;
+}
+
+.start-game-button-wrapper {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}

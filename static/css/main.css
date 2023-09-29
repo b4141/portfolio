@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+:root {
+  --bg-color: black;
+  --fg-color: white;
+  --font: 'Special Elite', cursive;
+  --letter-spacing: 0.15rem;
+}
+
+
 body {
   margin: 0;
-  background-color: black;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--font);
+  letter-spacing: var(--letter-spacing);
+}
+
+.full-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  display: grid;
+  place-items: center;
+}
+
+
+.game-page-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+.info-page-wrapper {
+  display: none;
+}
+
+.button {
+  border: 1px solid var(--fg-color);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  padding: 10px 20px 10px 20px;
+  box-shadow: 2px 2px var(--fg-color);
+  font-family: var(--font);
+  letter-spacing: var(--letter-spacing);
+}
+
+.button:active {
+  box-shadow: none;
 }
