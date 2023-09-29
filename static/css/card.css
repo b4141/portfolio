@@ -1,0 +1,15 @@
+.card {
+  width: 112px;
+  height: 164px;
+  border: 1px solid var(--fg-color);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  box-shadow: 2px 2px var(--fg-color);
+  display: grid;
+  place-items: center;
+}
+
+.card span {
+  font-size: 70px;
+  color: var(--fg-color);
+}

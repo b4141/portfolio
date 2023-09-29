@@ -16,6 +16,7 @@ body {
   height: 100vh;
   font-family: var(--font);
   letter-spacing: var(--letter-spacing);
+  overflow: hidden;
 }
 
 .full-wrapper {

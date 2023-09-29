@@ -4,6 +4,9 @@
 <head>
   <link rel="stylesheet" href="./static/css/main.css">
   <link rel="stylesheet" href="./static/css/start_game.css">
+  <link rel="stylesheet" href="./static/css/game_play.css">
+  <link rel="stylesheet" href="./static/css/card.css">
+  <link rel="stylesheet" href="./static/font/style.css">
 </head>
 
 <body>
@@ -33,17 +36,29 @@
           <div class="text">play the game if you dare</div>
         </div>
         <div class="start-game-button-wrapper">
-          <button class="button" >accept chalange</button>
+          <button class="button" onclick="startGame()">accept chalange</button>
         </div>
       </div>
 
       <div id="game-play" class="game-play">
+        <div class="text">choose a card to play</div>
+        <div class="hand-deck">
+          <div class="card rock-card" onclick="chooseCard('rock')">
+            <span class="icon-rock"></span>
+          </div>
+          <div class="card paper-card" onclick="chooseCard('paper')">
+            <span class="icon-paper"></span>
+          </div>
+          <div class="card scissors-card" onclick="chooseCard('scissors')">
+            <span class="icon-scissors"></span>
+          </div>
+        </div>
       </div>
 
       <div id="game-result-win" class="game-result-win">
       </div>
 
-      <div id="game-result-loose" class="game-result-loose">
+      <div id="game-result-lose" class="game-result-lose">
       </div>
 
       <div id="game-result-tied" class="game-result-tied">
